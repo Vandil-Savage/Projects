@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Which Bear Is Best?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Which Bear Is Best?</h1>
+    <p id="description">Help impostor Dwight decide which is the bestest bear.</p>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your First Name: <input id="name" name="name" type="text" placeholder="The noise people make when they call you." required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="The noise your mother makes when you are in trouble." required /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Yes, we're gonna spam you." required /></label>
+        <label for="number" id="number-label" >Enter Your Age:<input id="number" name="number" type="number" min="1" max="80" placeholder="The bear is asking." required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Bear: Real or Teddy?</legend>
+        <label for="Real"><input id="Real" type="radio" name="bear-type" class="inline" value="real" checked /> Real</label>
+        <label for="Teddy"><input id="Teddy" type="radio" value="teddy" name="bear-type" class="inline" /> Teddy</label>
+      </fieldset>
+      <fieldset>
+        
+        <label for="dropdown">Choose the best bear here!
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one bear)</option>
+            <option value="1">Polar Bear</option>
+            <option value="2">Sun Bear</option>
+            <option value="3">Panda Bear</option>
+            <option value="4">Sloth Bear</option>
+            <option value="5">Black Bear</option>
+           <option value="6">Brown Bear</option> 
+          </select>
+        </label>
+        <label for="tell">Tell us a cool fact about your favorite bear:
+          <textarea id="tell" name="tell" rows="3" cols="30" placeholder="Bears don't approve of forest fires."></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend> What does your favorite bear eat?
+      <label for="bear-food">
+        <input class="inline" id="bear-food" type="checkbox" required name="bear-food" value="beets" />Beets 
+      </label>
+   <label for="bear-food">
+        <input class="inline" id="bear-food" type="checkbox" required name="bear-food" value="Marshmallows" />Marshmallows 
+      </label>
+       <label for="bear-food">
+        <input class="inline" id="bear-food" type="checkbox" required name="bear-food" value="Angelas-cats" />Angela's cats 
+      </label>
+       <label for="bear-food">
+        <input class="inline" id="bear-food" type="checkbox" required name="bear-food" value="creeds-drawers" />The content of Creed's desk drawers 
+      </label>    
+      
+      
+      <input type="submit" id="submit"  value="Submit" />
+    </form>
+  </body>
+</html>
